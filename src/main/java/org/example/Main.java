@@ -9,7 +9,7 @@ public class Main {
 
         System.out.println("\nTask #1");
         List<Integer> nums = new ArrayList<>(List.of(1, 1, 2, 3, 4, 4, 5, 5, 6, 7));
-        printEvenNumbers(nums);
+        printOddNumbers(nums);
         System.out.println("\nTask #2");
         printEvenNumbersWithoutRepetition(nums);
         System.out.println("\nTask #3");
@@ -19,10 +19,10 @@ public class Main {
         List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
         printDuplicateQuantities(strings);
     }
-    public static void printEvenNumbers(List<Integer> nums){
+    public static void printOddNumbers(List<Integer> nums){
         List<Integer> evenNums = new ArrayList<>();
         for (Integer num: nums){
-            if(num%2 == 0){
+            if(num%2 != 0){
                 evenNums.add(num);
             }
         }
